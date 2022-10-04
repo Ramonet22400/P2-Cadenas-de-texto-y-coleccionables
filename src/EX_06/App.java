@@ -23,11 +23,13 @@ public class App {
         String cadena_preparada= cadena_texto.trim().replaceAll(" ","").toLowerCase();
 
         char[] arr_frase = cadena_preparada.toCharArray();
+        String[] frase_letra = cadena_preparada.split("");
 
         for (int i = 0; i < cadena_preparada.length(); i++) {
 
             byte[] bytes = cadena_preparada.getBytes(StandardCharsets.US_ASCII);
-            System.out.println("ASCII Numeric Value of "+bytes[i].);
+
+            System.out.println("El valor numerico ASCII de "+arr_frase[i]+" es: "+bytes[i]);
 
         }
     }
