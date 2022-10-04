@@ -14,20 +14,24 @@ public class App {
     public void function_lambda(){
 
 
-                ArrayList<Student> Profes = new ArrayList<Student>();
-                Profes.add(new Student("Francisco", 27));
-                Profes.add(new Student("Maria Jose", 32));
-                Profes.add(new Student("Xavier", 29));
-                Profes.removeIf(student -> (student.age <= 28)); // Expresion Lambda
+                ArrayList<Professor> Profes = new ArrayList<Professor>();
+                Profes.add(new Professor("Francisco", 27));
+                Profes.add(new Professor("Maria Jose", 32));
+                Profes.add(new Professor("Aleix", 29));
+                Profes.add(new Professor("Juan",25));
+                Profes.add(new Professor("Xavier",43));
+                Profes.removeIf(Profesor -> (Profesor.edad <= 28)); // Expresion Lambda
                 System.out.println("La lista de profes es: ");
-                for(Student student : Profes) {
-                    System.out.println(student.name);
+
+
+                for(Professor Professor : Profes) {
+                    System.out.println(Professor.nombre);
                 }
             }
-            private static class Student {
+            private static class Professor {
                 private String nombre;
                 private int edad;
-                public Student(String nombre, int edad) {
+                public Professor(String nombre, int edad) {
                     this.nombre = nombre;
                     this.edad = edad;
                 }
