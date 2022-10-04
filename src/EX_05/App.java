@@ -1,6 +1,7 @@
 package EX_05;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 //Dada una cadena de texto con una contraseña, indicar si la contraseña es fuerte o
 //débil. Consideramos una contraseña fuerte si contiene 8 o más caracteres, y entre
 //ellos, por lo menos una mayúscula, una minúscula, un símbolo y un dígito
@@ -50,7 +51,8 @@ public class App {
     }
 }
 
-//Hay una forma mucho más sencilla de ejecutar este código, pero ya que este lo he pensado y creado yo desde 0 es el que eh puesto.
+//Hay una forma mucho más sencilla de ejecutar este código, pero ya que el de arriba lo e pensado y creado yo desde 0 es el que eh puesto.
+//Las dos formas son correctas y funcionan igual de bien.
 
 
 //    Pattern pattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*\\W).{8,}$", Pattern.CASE_INSENSITIVE);
