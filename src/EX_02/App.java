@@ -6,11 +6,8 @@ import java.util.Scanner;
 //“Manu”, la salida será: “FMraanu”
 
 public class App {
-
     Scanner palabra1 = new Scanner(System.in);
     Scanner palabra2 = new Scanner(System.in);
-
-
 
     public static void main(String[] args){
     EX_02.App app = new EX_02.App();
