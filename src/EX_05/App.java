@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 public class App {
 
     String contra = "RAmon123:";
+    Integer fuerza = 0;
 
     public static void main(String[] args){
         EX_05.App app = new EX_05.App();
@@ -23,6 +24,9 @@ public class App {
         if(frase_lenght >= 8){
 
             System.out.println("La contraseña cumple con la longitud minima.");
+
+            fuerza = fuerza + 1;
+
         }else{
 
             System.out.println("La ocntraseña no cuenta con la longitud mínima.");
@@ -31,6 +35,7 @@ public class App {
         if (contra1!=contra1.toLowerCase()){
 
             System.out.println("La contraseña cuenta con mayúsculas y minuscúlas.");
+            fuerza = fuerza + 1;
 
         }else{
 
@@ -43,9 +48,20 @@ public class App {
 
         if(contiene_digitos_simbolos) {
             System.out.println("La contraseña contiene tanto digítos como símbolos.");
+            fuerza = fuerza + 1;
         } else {
             System.out.println("La contaraseña no cumple con los parametros de seguridad");
 
+        }
+
+        System.out.println();
+
+        if(fuerza == 3){
+
+            System.out.println("La contraseña que as introducido es fuerte.");
+        }else{
+
+            System.out.println("La contraseña no es lo suficientemente fuerte.");
         }
 
     }
