@@ -19,12 +19,18 @@ public class App {
         System.out.println("Escriba la palabra: ");
         String palabra = v1.nextLine();
         System.out.println("Introduzca el caracter: ");
-        String caracter = v2.nextLine();
+        char caracter = v2.nextLine().charAt(0);
+        String posiciones = "";
+        for (int i = 0; i < palabra.length(); i++) {
 
-        int Posicion = palabra.length();
+            if(palabra.charAt(i) == caracter){
 
-        System.out.println("La posición del caracter es:"+Posicion);
+                posiciones+=i + ", ";
+            }
 
+        }
+
+        System.out.println("La posición del caracter es:" + posiciones);
 
     }
 }

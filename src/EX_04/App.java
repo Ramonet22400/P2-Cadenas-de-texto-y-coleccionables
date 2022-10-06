@@ -20,18 +20,13 @@ public class App {
         String caracter = v2.nextLine();
 
         String juntos = palabra + caracter;
-        String buscador ="/";
+        String buscador ="";
 
         int indice = juntos.indexOf(buscador);
 
         indice  = juntos.indexOf(buscador);
 
         System.out.println("La poición del caracter es: " + indice);
-
-
-
-
-
 
     }
 
