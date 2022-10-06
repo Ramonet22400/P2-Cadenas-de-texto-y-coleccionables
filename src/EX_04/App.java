@@ -19,15 +19,7 @@ public class App {
         System.out.println("Introduzca el caracter: ");
         String caracter = v2.nextLine();
 
-        String juntos = palabra + caracter;
-        String buscador ="";
-
-        int indice = juntos.indexOf(buscador);
-
-        indice  = juntos.indexOf(buscador);
-
-        System.out.println("La poición del caracter es: " + indice);
-
+        System.out.println(palabra.indexOf(caracter));
     }
 
 }
