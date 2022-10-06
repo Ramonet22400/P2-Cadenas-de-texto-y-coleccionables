@@ -1,5 +1,6 @@
 package EX_04;
 import java.util.Scanner;
+
 //Realice el ejercicio 3 usando indexOf.
 
 public class App {

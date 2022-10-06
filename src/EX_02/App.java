@@ -24,10 +24,38 @@ public class App {
         char primera_letra1 = primera_palabra.charAt(0);
         char primera_letra2 = segunda_palabra.charAt(0);
 
-        String palabra1_simple = primera_palabra.substring(1);
-        String palabra2_simple = segunda_palabra.substring(1);
+        System.out.print(primera_letra1);
+        System.out.print(primera_letra2);
 
-        System.out.println("El resultado de las dos palabras es el siguiente:"+primera_letra1+""+primera_letra2+""+palabra1_simple+""+palabra2_simple);
+        char[] arr_primera_palabra = primera_palabra.toCharArray();
+        char[] arr_segunda_palabra = segunda_palabra.toCharArray();
+
+        int num_pal1 = arr_primera_palabra.length;
+        int num_pal2 = arr_segunda_palabra.length;
+
+        boolean respuesta = num_pal1 < num_pal2;
+
+        char[] palabra_corta;
+        if (respuesta == true){
+            palabra_corta = arr_primera_palabra ;
+        }else{
+            palabra_corta = arr_segunda_palabra;
+        }
+
+        for (int i = 1; i < palabra_corta.length; i++) {
+
+            System.out.print(arr_primera_palabra[i]);
+            System.out.print(arr_segunda_palabra[i]);
+        }
+
+
+        if(primera_palabra.length() < segunda_palabra.length()){
+
+            System.out.println(segunda_palabra.substring(primera_palabra.length()));
+        }else{
+            System.out.println(primera_palabra.substring(segunda_palabra.length()));
+        }
+
     }
 }
 
